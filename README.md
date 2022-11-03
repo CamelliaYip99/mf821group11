@@ -8,6 +8,7 @@
 
 ## Breakthrough!
 Capable of Buying + Selling a stock picked by scanner! HUDI was one of 5 picked by scanner, bought and sold all 3,000 shares. (filed: 11/3)
+
 <img width="635" alt="Screen Shot 2022-11-03 at 6 51 23 PM" src="https://user-images.githubusercontent.com/29446974/199850346-4a2f1e13-749c-499a-a572-dd3fd627f33d.png">
 
 
