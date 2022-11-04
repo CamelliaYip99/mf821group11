@@ -5,7 +5,9 @@
 - Test trade algo using real market data during market hours. (N/A)
 - Find a way for algo to run on market open w/o human interaction & disconnect from TWS API on market close OR when all trades have been placed. (approx. 2 days)
 - Find a way to grab top 5 stocks from scanner and run 5 threads (one thread per stock) (approx. 1 day)
+- Terminate thread socket upon completion of bracket order. (approx. 2 hours)
 - What to do with our positions that don't sell by EOD? Open to discussion on this one. (N/A)
+- Actually test algo on proper triangle conditions (modify as needed), right now it only has a simple, naive, if statement to check if it meets certain criteria. (N/A)
 
 
 ## Blockers :(
@@ -16,6 +18,9 @@ Capable of Buying + Selling a stock picked by scanner! HUDI was one of 5 picked 
 
 <img width="635" alt="Screen Shot 2022-11-03 at 6 51 23 PM" src="https://user-images.githubusercontent.com/29446974/199850346-4a2f1e13-749c-499a-a572-dd3fd627f33d.png">
 
+Capable of creating a proper bracket order in that algo will automatically place in 1 buy, and a stop/limit condition. Algo will then automatically transmit and fill the buy order, and wait for price to hit stop/limit conditions, then fill the sell order. (filed 11/4)
+
+<img width="812" alt="Screen Shot 2022-11-04 at 2 38 52 PM" src="https://user-images.githubusercontent.com/29446974/200052541-ae66aa9f-3723-4b64-bafb-712e0d9e6ce1.png">
 
 
 ## DONE:
