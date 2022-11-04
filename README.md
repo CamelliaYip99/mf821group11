@@ -6,6 +6,15 @@
 - Find a way for algo to run on market open w/o human interaction & disconnect from TWS API on market close OR when all trades have been placed. (approx. 6 hours)
 - Fix Bug-8, which would mean trader doesn't need to tell TWS to begin filling orders
 
+
+## Blockers :(
+- Bug-10: I following the error on almost all orders (ones that do not have this get placed in brackket order). Is this due to quantity (1 vs. 5 vs. 500 vs. 30000 shares bought?) or due to the spread between the profitTarget and stopLoss (do we reduce or increase this spread?)(filed 11/4)
+
+```
+TWS Error Code:  110
+Message for Error Code:  The price does not conform to the minimum price variation for this contract.
+```
+
 ## Breakthrough!
 Capable of Buying + Selling a stock picked by scanner! HUDI was one of 5 picked by scanner, bought and sold all 3,000 shares. (filed: 11/3)
 
