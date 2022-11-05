@@ -1,15 +1,16 @@
 # mf821group11
 
 ## TODO:
-- Integrate scanner with trade algo. (approx. 3-5 days)
 - Test trade algo using real market data during market hours. (N/A)
 - Find a way for algo to run on market open w/o human interaction & disconnect from TWS API on market close OR when all trades have been placed. (approx. 2 days)
-- Find a way to grab top 5 stocks from scanner and run 5 threads (one thread per stock) (approx. 1 day)
 - What to do with our positions that don't sell by EOD? Open to discussion on this one. (N/A)
 - Actually test algo on proper triangle conditions (modify as needed), right now it only has a simple, naive, if statement to check if it meets certain criteria. (N/A)
 
 ## In Progress:
 - ActionItem-1: Terminate thread socket upon completion of bracket order. Currently unable to properly disconnect from API, attempting to use an asyncio process to override TWS API disconnect callback function - no luck so far with this approach (approx. 2 hours)(filed 11/4)
+- Find a way to grab top 5 stocks from scanner and run 5 threads (one thread per stock) (approx. 1 day)
+  * Tested outside of market hours (confirmed 5 threads are created), needs to be confirmed to work during trading hours before moved to "Done" (filed 11/5)
+- Integrate scanner with trade algo. (approx. 1 day)
 
 ## Blockers :(
 None for now :)
